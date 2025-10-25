@@ -3,14 +3,14 @@ import Link from 'next/link';
 export default function MovieCard({ movie }) {
   return (
     <div className="movie-card">
-      <h3 className="font-semibold text-lg flex items-center">
+      <h3 className="font-heading text-xl font-semibold flex items-center">
         {/* Film icon */}
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 mr-2 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path d="M3 4a1 1 0 011-1h2a1 1 0 011 1v1h6V4a1 1 0 011-1h2a1 1 0 011 1v3a1 1 0 01-1 1h-1v6h1a1 1 0 011 1v3a1 1 0 01-1 1h-2a1 1 0 01-1-1v-1H7v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-3a1 1 0 011-1h1V8H4a1 1 0 01-1-1V4zM6 6H5v2h1V6zm8 8h1v-2h-1v2z" />
         </svg>
-        {movie.title} <span className="text-sm text-gray-500 ml-2">({movie.releaseYear || '-'})</span>
+        {movie.title} <span className="text-sm font-sans text-primary-600/70 ml-2">({movie.releaseYear || '-'})</span>
       </h3>
-      <p className="text-sm text-gray-700 mt-3">{movie.description?.slice(0,140)}...</p>
+      <p className="text-sm font-sans leading-relaxed text-primary-700/80 mt-3">{movie.description?.slice(0,140)}...</p>
         <div className="mt-4 flex items-center justify-between">
           <div className="rating-badge group">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 transform group-hover:scale-110 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

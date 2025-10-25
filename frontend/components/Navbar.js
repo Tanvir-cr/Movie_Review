@@ -35,9 +35,9 @@ export default function Navbar() {
   return (
     <nav className="site-navbar">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-bold text-2xl tracking-tight flex items-center gap-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all duration-300">
+        <Link href="/" className="font-heading text-2xl tracking-tight flex items-center gap-3 text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500 hover:from-primary-500 hover:to-accent-400 transition-all duration-300">
           <span className="text-3xl transform hover:scale-110 transition-transform duration-300">🎬</span>
-          <span>Movie Reviews</span>
+          <span className="font-semibold">Movie Reviews</span>
         </Link>
         <div className="flex items-center gap-4">
           {/* Theme toggle */}
